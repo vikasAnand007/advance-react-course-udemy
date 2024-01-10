@@ -10,3 +10,20 @@ Can be used to modify the incoming children prop.
 To validate if a valid react element/component
 ### `React.Children.map(children, (child) => {}`
 Can be used to iterate on the "children" prop
+
+## Render Prop
+Render prop is a function (fun) returning a component (comp). It is passed in a component (parentComp) as a prop. 
+Now,  *parentComp* receives that prop and renders it. 
+*Example:*
+
+    const Parent = ({render}) => {  
+      return render();
+    };
+
+    const Child = ({render}) => {  
+      return (
+          <RenderPropDataSource
+	          render={() => <BookInfo />}
+          />
+      );
+    };

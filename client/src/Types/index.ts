@@ -40,6 +40,8 @@ export type Section = {
   component?: React.FC;
 };
 
+export type SectionList = Section[];
+
 export type UserType = {
   id: number;
   name: string;
@@ -49,13 +51,49 @@ export type UserType = {
   website: string;
 };
 
-export type SectionList = Section[];
+export type BookType = {
+  id: number;
+  author: string;
+  country: string;
+  language: string;
+  pages: number;
+  title: string;
+};
 
 export type UserInfoProp = {
   user?: UserType;
 };
 
+export type BookInfoProp = {
+  book?: BookType;
+};
+
 // "ReactElement<UserInfoProp>" will ensure that UserComponentWraperPropType only accepts those children which accept "user" prop.
 export type UserComponentWraperPropType = {
   children: ReactElement<UserInfoProp> | ReactElement<UserInfoProp>[];
+};
+
+export type ResourceComponentWraperPropType = {
+  children:
+    | ReactElement<UserInfoProp | BookInfoProp>
+    | ReactElement<UserInfoProp | BookInfoProp>[];
+};
+
+export type UserLoaderPropType = UserComponentWraperPropType & {
+  userId: number;
+};
+
+export type ResourceLoaderPropType = ResourceComponentWraperPropType & {
+  resourceUrl: string;
+  resourceName: string;
+};
+
+export type DataSourcePropType = ResourceComponentWraperPropType & {
+  getData: () => any;
+  resourceName: string;
+};
+export type RenderPropRenderFunctionType = (params: BookType) => ReactNode;
+export type RenderPropDataSourceType = {
+  getData: () => any;
+  render: RenderPropRenderFunctionType;
 };
