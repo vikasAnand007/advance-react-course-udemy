@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { getData } from "../../utils/helpers";
-import RagularList from "../../Layouts/List/RagularList";
+import { getData } from "../../../utils/helpers";
+import RagularList from "../Layouts/List/RagularList";
 
-const Left = () => {
+const Right = () => {
   const [apiData, setApiData] = useState([]);
 
   useEffect(() => {
@@ -17,4 +17,4 @@ const Left = () => {
   );
 };
 
-export default Left;
+export default Right;

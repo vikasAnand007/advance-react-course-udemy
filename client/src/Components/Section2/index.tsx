@@ -1,8 +1,8 @@
-import Left from "./Components/SplitScreen/Left";
-import Right from "./Components/SplitScreen/Right";
 import SplitScreen from "./Layouts/SplitScreen/SplitScreen";
+import Left from "./SplitScreen/Left";
+import Right from "./SplitScreen/Right";
 
-const App = () => {
+const Section2 = () => {
   return (
     <>
       <SplitScreen leftWidth={1} rightWidth={2}>
@@ -13,4 +13,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Section2;

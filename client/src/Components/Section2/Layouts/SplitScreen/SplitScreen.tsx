@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { SplitScreenPropTypes } from "../../Types";
+import { SplitScreenPropTypes } from "../../../../Types";
 
 type PanelProps = {
   flex: number;

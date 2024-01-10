@@ -2,13 +2,13 @@ import { ReactNode, useState } from "react";
 import styled from "styled-components";
 
 const ModalBackground = styled.div`
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   overflow: auto;
   background-color: #00000070;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 `;
 
 const ModalContent = styled.div`
@@ -22,7 +22,7 @@ const Modal = ({ children }: { children: ReactNode }) => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <button onClick={() => setShow(true)}>open</button>
+      <button onClick={() => setShow(true)}>simple modal</button>
       {show && (
         <ModalBackground onClick={() => setShow(false)}>
           <ModalContent onClick={(e) => e.stopPropagation()}>

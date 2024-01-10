@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ColumnItem, ListItemPropType } from "../../Types";
+import { ColumnItem, ListItemPropType } from "../../../Types";
 
 const StyledTd = styled.td`
   font-size: 16px;

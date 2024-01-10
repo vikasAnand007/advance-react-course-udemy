@@ -1,7 +1,7 @@
-import SmallListItem from "../../Components/List/SmallListItem";
-import LargeListItem from "../../Components/List/LargeListItem";
-import { RagularListPropType } from "../../Types";
 import styled from "styled-components";
+import { RagularListPropType } from "../../../../Types";
+import SmallListItem from "../../List/SmallListItem";
+import LargeListItem from "../../List/LargeListItem";
 
 const StyledTable = styled.table`
   border-collapse: collapse;

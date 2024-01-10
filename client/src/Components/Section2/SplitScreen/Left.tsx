@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { getData } from "../../utils/helpers";
-import RagularList from "../../Layouts/List/RagularList";
+import { getData } from "../../../utils/helpers";
 import Modal from "../Modal/Modal";
+import RagularList from "../Layouts/List/RagularList";
 
 const Left = () => {
   const [apiData, setApiData] = useState([]);
