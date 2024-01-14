@@ -97,3 +97,29 @@ export type RenderPropDataSourceType = {
   getData: () => any;
   render: RenderPropRenderFunctionType;
 };
+
+export type ControlledModalPropType = {
+  children: ReactNode;
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+export type GoNextType = (p1: any, p2?: boolean) => void;
+
+export type StepComponentPropType = {
+  goNext?: GoNextType;
+};
+
+export type StepComponentType = ReactElement<StepComponentPropType>;
+
+export type UncontrolledFlowPropType = {
+  children: StepComponentType | StepComponentType[];
+  submitHandler: (p: any) => void;
+};
+
+export type ControlledFlowPropType = {
+  children: StepComponentType | StepComponentType[];
+  submitHandler: (p: any) => void;
+  stepIndex: number;
+  goNext: GoNextType;
+};
