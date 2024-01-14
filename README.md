@@ -27,3 +27,12 @@ Now,  *parentComp* receives that prop and renders it.
           />
       );
     };
+## Controlled vs Uncontrolled Components
+| Controlled | Uncontrolled |
+|--|--|
+| Components where state and behaviour are managed by the parent component | Components where state and behaviour are managed within the component |
+*state : states of components
+behaviour : like how the sates are changed* 
+
+## `React.Children.toArray()`
+to convert the incoming children prop in an array of react elements.
