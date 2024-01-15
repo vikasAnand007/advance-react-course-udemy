@@ -31,8 +31,16 @@ Now,  *parentComp* receives that prop and renders it.
 | Controlled | Uncontrolled |
 |--|--|
 | Components where state and behaviour are managed by the parent component | Components where state and behaviour are managed within the component |
+
+> Note ::
+
 *state : states of components
 behaviour : like how the sates are changed* 
 
 ## `React.Children.toArray()`
 to convert the incoming children prop in an array of react elements.
+
+## HOC (Higher Order Components)
+
+ - HOC are functions which receives a component as an argument and returns a component. 
+ - It is generally used to create a wrapper with added features around a component.

@@ -1,6 +1,8 @@
 // import Section2 from "../Components/Section2";
 // import Section3 from "../Components/Section3";
-import Section4 from "../Components/Section4";
+// import Section4 from "../Components/Section4";
+import Section5 from "../Components/Section5";
+
 import { SectionList } from "../Types";
 
 export const sections: SectionList = [
@@ -17,6 +19,10 @@ export const sections: SectionList = [
   },
   {
     title: "Section 4 (Controlled and Uncontrolled Components)",
-    component: Section4,
+    // component: Section4,
+  },
+  {
+    title: "Section 5 (Design patterns: HOCs)",
+    component: Section5,
   },
 ];

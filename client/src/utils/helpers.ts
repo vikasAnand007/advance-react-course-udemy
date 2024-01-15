@@ -12,3 +12,8 @@ export const getDataFromServer = async (url: string) => {
   const data = await axios.get(`${API_URI}${url}`);
   return data.data;
 };
+
+export const updateData = async (url: string, body: any) => {
+  const data = await axios.put(`${API_URI}${url}`, body);
+  return data.data;
+};

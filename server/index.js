@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { currentUser, users } = require("./modals/user");
+let { currentUser, users } = require("./modals/user");
 const { books } = require("./modals/book");
 
 const app = express();
@@ -15,6 +15,15 @@ app.get("/user/:id", (req, res) => {
   res.json(oneUser);
 });
 app.get("/users", (req, res) => res.json(users));
+app.put("/user/:id", (req, res) => {
+  const { id } = req.params;
+  const { updates } = req.body;
+  const updatedUsers = users.map((elem) =>
+    elem.id.toString() === id.toString() ? updates : elem
+  );
+  users = updatedUsers;
+  res.json(users.find((elem) => elem.id.toString() === id.toString()));
+});
 
 // books ----
 app.get("/book/:id", (req, res) => {
