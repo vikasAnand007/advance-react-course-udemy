@@ -1,18 +1,9 @@
-import styled from "styled-components";
 import UserInfo from "../Section3/UserInfo";
 import useResource from "./useResource.hook";
 import BookInfo from "../Section3/BookInfo";
+import { Child, Container } from "../../Styled/StyledComponents";
 
-const Container = styled.div`
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-`;
 
-const Child = styled.div`
-  border: 1px solid black;
-  padding: 10px;
-`;
 
 const Section6 = () => {
   const user = useResource("/user/1");

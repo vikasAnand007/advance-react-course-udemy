@@ -124,3 +124,20 @@ export type ControlledFlowPropType = {
   stepIndex: number;
   goNext: GoNextType;
 };
+
+export type MenuItemType = {
+  name: string;
+  children?: MenuListType;
+};
+
+export type MenuListType = MenuItemType[];
+
+export type ButtonPropsTypeWoChildren = {
+  size?: "small" | "medium" | "large";
+  variant?: "success" | "error" | "info" | "normal";
+  props?: any;
+};
+
+export type ButtonPropsType = {
+  children: string;
+} & ButtonPropsTypeWoChildren;
