@@ -11,6 +11,7 @@ const Left = () => {
   }, []);
   return (
     <>
+      Left Section
       <RagularList items={apiData} size="small" columns={["name", "gender"]} />
       <Modal>
         <h3>Modal Title</h3>

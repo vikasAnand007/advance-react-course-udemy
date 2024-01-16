@@ -9,11 +9,14 @@ const Right = () => {
     getData(setApiData);
   }, []);
   return (
-    <RagularList
-      items={apiData}
-      size="large"
-      columns={["name", "gender", "age", "birthplace", "residence"]}
-    />
+    <>
+      Right Section
+      <RagularList
+        items={apiData}
+        size="large"
+        columns={["name", "gender", "age", "birthplace", "residence"]}
+      />
+    </>
   );
 };
 
