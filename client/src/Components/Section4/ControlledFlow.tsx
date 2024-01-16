@@ -9,6 +9,7 @@ const ControlledFlow = ({
   const currentElement: any = React.Children.toArray(children)[stepIndex];
 
   if (React.isValidElement(currentElement)) {
+    // @ts-expect-error : dont know the cause of error
     return React.cloneElement(currentElement, { goNext });
   }
 

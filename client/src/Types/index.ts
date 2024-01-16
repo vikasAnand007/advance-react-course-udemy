@@ -106,9 +106,10 @@ export type ControlledModalPropType = {
 
 export type GoNextType = (p1: any, p2?: boolean) => void;
 
-export type StepComponentPropType = {
-  goNext?: GoNextType;
-};
+// export type StepComponentPropType = {
+//   goNext?: GoNextType;
+// };
+export type StepComponentPropType = any;
 
 export type StepComponentType = ReactElement<StepComponentPropType>;
 

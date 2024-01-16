@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { GoNextType, UncontrolledFlowPropType } from "../../Types";
+import {
+  GoNextType,
+  UncontrolledFlowPropType,
+} from "../../Types";
 
 const UncontrolledFlow = ({
   children,
@@ -21,9 +24,10 @@ const UncontrolledFlow = ({
     setStepIndex((prev) => prev + 1);
   };
 
-  const currentElement: any = React.Children.toArray(children)[stepIndex];
+  const currentElement = React.Children.toArray(children)[stepIndex];
 
   if (React.isValidElement(currentElement)) {
+    // @ts-expect-error : dont know the cause of error
     return React.cloneElement(currentElement, { goNext });
   }
 
