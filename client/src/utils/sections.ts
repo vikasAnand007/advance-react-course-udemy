@@ -5,7 +5,7 @@ import Section5 from "../Components/Section5";
 import Section6 from "../Components/Section6";
 import Section7 from "../Components/Section7";
 import Section8 from "../Components/Section8";
-
+import Section9 from "../Components/Section9";
 import { SectionList } from "../Types";
 
 export const sections: SectionList = [
@@ -39,5 +39,9 @@ export const sections: SectionList = [
   {
     title: "Section 8 (Design patterns: More patterns)",
     component: Section8,
+  },
+  {
+    title: "Section 9 (Adwanced concepts and hooks)",
+    component: Section9,
   },
 ];
