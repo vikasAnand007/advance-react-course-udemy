@@ -56,9 +56,9 @@ export const SmallDangerButton = ({ children, ...props }: ButtonPropsType) => {
 };
 
 export const LargeInfoButton = ({ children, ...props }: ButtonPropsType) => {
-    return (
-      <InfoButton {...props} size="large">
-        {children}
-      </InfoButton>
-    );
-  };
+  return (
+    <InfoButton {...props} size="large">
+      {children}
+    </InfoButton>
+  );
+};

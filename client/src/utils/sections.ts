@@ -1,3 +1,6 @@
+import Section10 from "../Components/Section10";
+import Section11 from "../Components/Section11";
+import Section12 from "../Components/Section12";
 import Section2 from "../Components/Section2";
 import Section3 from "../Components/Section3";
 import Section4 from "../Components/Section4";
@@ -43,5 +46,17 @@ export const sections: SectionList = [
   {
     title: "Section 9 (Adwanced concepts and hooks)",
     component: Section9,
+  },
+  {
+    title: "Section 10 (Clean code tips)",
+    component: Section10,
+  },
+  {
+    title: "Section 11 (Scalable project architecture)",
+    component: Section11,
+  },
+  {
+    title: "Section 12 (API layer and async operations)",
+    component: Section12,
   },
 ];

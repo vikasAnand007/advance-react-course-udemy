@@ -15,6 +15,9 @@ app.get("/user/:id", (req, res) => {
   res.json(oneUser);
 });
 app.get("/users", (req, res) => res.json(users));
+app.get("/users-slow", (req, res) => {
+  setTimeout(() => res.json(users), 1000);
+});
 app.put("/user/:id", (req, res) => {
   const { id } = req.params;
   const { updates } = req.body;

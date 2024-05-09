@@ -14,11 +14,11 @@
 
  - Lession 54 (Section 9 : Async react router)
 
-### Disclaimer !
+<!-- ### Disclaimer !
 
  - There might be many spelling and grammer mistakes in this README file.
  - I have written notes for only those topics which I found new or worth to be noted.
- - The notes written here are made as per my personal understanding. **Don't trust them blindly**.
+ - The notes written here are made as per my personal understanding. **Don't trust them blindly**. -->
 
  
  
