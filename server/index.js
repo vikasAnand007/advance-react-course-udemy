@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 let { currentUser, users } = require("./modals/user");
-const { books } = require("./modals/book");
+let { books } = require("./modals/book");
+const { paginate } = require("./utils");
 
 const app = express();
 app.use(express.json());
@@ -29,6 +30,33 @@ app.put("/user/:id", (req, res) => {
 });
 
 // books ----
+app.get("/books", (req, res) => {
+  const { page } = req.query;
+
+  let dataToReturn = books;
+  if (page) {
+    dataToReturn = paginate(books, page, 2);
+  }
+  return res.json(dataToReturn);
+});
+app.post("/books", (req, res) => {
+  const { title } = req.body;
+  const newBook = {
+    author: title,
+    country: title,
+    language: title,
+    pages: 100,
+    title,
+    id: books.length,
+    new: true,
+  };
+  books.push(newBook);
+  res.json(newBook);
+});
+app.put("/books-reset", (req, res) => {
+  books = books.filter((b) => !!b.new === false);
+  res.json({ status: true });
+});
 app.get("/book/:id", (req, res) => {
   const { id } = req.params;
   const oneUser = books.find((elem) => elem.id.toString() === id.toString());

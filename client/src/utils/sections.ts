@@ -1,6 +1,9 @@
 import Section10 from "../Components/Section10";
 import Section11 from "../Components/Section11";
 import Section12 from "../Components/Section12";
+import Section13 from "../Components/Section13";
+import Section14 from "../Components/Section14";
+import Section15 from "../Components/Section15";
 import Section2 from "../Components/Section2";
 import Section3 from "../Components/Section3";
 import Section4 from "../Components/Section4";
@@ -58,5 +61,17 @@ export const sections: SectionList = [
   {
     title: "Section 12 (API layer and async operations)",
     component: Section12,
+  },
+  {
+    title: "Section 13 (API layer with react query)",
+    component: Section13,
+  },
+  {
+    title: "Section 14 (State management patterns.)",
+    component: Section14,
+  },
+  {
+    title: "Section 15 (Performance optimisation.)",
+    component: Section15,
   },
 ];

@@ -13,6 +13,8 @@
 ### Topics not covered !
 
  - Lession 54 (Section 9 : Async react router)
+ - Lession 72 (Section 13 : Infinte scroll with react query)
+ - Lession 73 (Section 13 : Query Cancellation with React-Query)
 
 <!-- ### Disclaimer !
 
@@ -153,3 +155,10 @@ This acts like a **debouce** , The value returned by **useDeferredValue** is a c
 useTransition hook also gives a pending indicator, whose value is true until the process completes.
 
 *See the usecase in code*
+
+## Throttling and Debouncing
+Throttling and debouncing, both are used to limit the rate at which a callback runs.
+
+**Throttling** limits the number of times a function is executed over a certain time period. It ensures that the function is called at a controlled, steady rate.
+
+**Debouncing** is a technique that delays the execution of a function until a certain amount of time has passed since the last event's occurrence.
