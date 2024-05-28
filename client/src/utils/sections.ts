@@ -8,6 +8,7 @@ import Section18 from "../Components/Section18";
 import Section19 from "../Components/Section19";
 import Section2 from "../Components/Section2";
 import Section20 from "../Components/Section20";
+import Section21 from "../Components/Section21";
 import Section3 from "../Components/Section3";
 import Section4 from "../Components/Section4";
 import Section5 from "../Components/Section5";
@@ -94,5 +95,9 @@ export const sections: SectionList = [
   {
     title: "Section 20 (Design System: Patterns for spacing.)",
     component: Section20,
+  },
+  {
+    title: "Section 21 (Design System: Patterns for more complex styles.)",
+    component: Section21,
   },
 ];
